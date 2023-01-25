@@ -8,7 +8,7 @@
     <!-- icon -->
     <link rel="shortcut icon" href="assets/images/gt_favicon.png">
     <!-- font -->
-    
+
     <!-- styles -->
 	<link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -23,7 +23,6 @@
     <?php include './components/featuredWork.php'; ?>
     <?php include './components/latestWork.php'; ?>
     <?php include './components/miscellaneous.php'; ?>
-    <?php include './components/foot.php'; ?>
     <?php include './components/footer.php'; ?>
 </body>
 </html>
