@@ -15,6 +15,9 @@ CSS Structure:
         - 
 */
 :root {
+    /* sizes */
+    --maximum-width: 105em;
+
     /* colors */
     --green-color: #25c389;
     --yellow-color: #ffb901;
