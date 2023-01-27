@@ -45,7 +45,7 @@ body {
 
 body > * {
     max-width: 105em;
-    margin: 0  9.375em;
+    margin: 0 9.375em;
 }
 
 /* navbar */
@@ -98,7 +98,9 @@ body > * {
 
 /* carousel */
 .carousel {
-
+    background-color: orange;
+    height: 50px;
+    margin: 0;
 }
 
 /* about */
