@@ -16,7 +16,7 @@ CSS Structure:
 */
 :root {
     /* sizes */
-    --maximum-width: 105em;
+    --maximum-width: 90em;
     --small-font-size: 1em;
 
     /* colors */
@@ -37,15 +37,20 @@ CSS Structure:
 html {
     scroll-behavior: smooth;
 }
-
+* {
+    margin: 0;
+}
 body {
     margin: 0;
     font-family: var(--font-family);
 }
-
 body > * {
-    max-width: 105em;
-    margin: 0 9.375em;
+    max-width: var(--maximum-width);
+    padding: 0 9.375em;
+}
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 /* navbar */
@@ -54,8 +59,8 @@ body > * {
     align-items: flex-end;
     color: white;
     font-size: var(--small-font-size);
-    justify-content: center;
-    gap: 6.25em;
+    justify-content: space-between;
+    /* gap: 6.25em; */
 }
 .navbar img {
     height: 80px;
@@ -110,7 +115,22 @@ body > * {
 
 /* featured work */
 .featured_work {
+    text-align: center;
+}
+.featured_work h2 {
+    font-weight: 400;
 
+}
+.featured_work__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 18em;
+    grid-gap: 1.5em;
+}
+.featured_work__item img {
+    max-width:100%;
+    height:100%;
+    object-fit: cover;
 }
 
 /* latestWork */
