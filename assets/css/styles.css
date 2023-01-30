@@ -112,16 +112,53 @@ p {
 
 /* carousel */
 .carousel {
-    background-color: orange;
-    height: 50px;
+    /* background-color: orange;
+    height: 45em; */
     margin: 0;
+    padding: 0;
+}
+
+.carousel-image{
+    width: 100%;
+}
+
+.carousel-container{
+
 }
 
 /* about */
 .about {
 
 }
+.introduction{
+    text-align: center;
+    
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.service-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-text-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 
+.topic-title{
+    font-family: Ubuntu, sans-serif;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 1em;
+}
+
+.topic-description{
+}
 /* featured work */
 .featured_work {
     text-align: center;
