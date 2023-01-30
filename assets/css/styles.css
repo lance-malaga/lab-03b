@@ -114,17 +114,33 @@ p {
 .carousel {
     /* background-color: orange;
     height: 45em; */
+    /* margin: 0;
+    padding: 0; */
+}
+
+.carousel-image > .carousel{
+    width: 100%;
     margin: 0;
     padding: 0;
 }
 
-.carousel-image{
-    width: 100%;
-}
-
 .carousel-container{
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.arrow-parent{
+    position: absolute;
+}
+
+.carousel-left-arrow{
+    position: absolute;
+    left: 0;
+}
+.carousel-right-arrow{
+    right: 0;
+}
+
 
 /* about */
 .about {
