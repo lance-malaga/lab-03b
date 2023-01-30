@@ -27,9 +27,10 @@ CSS Structure:
     --red-color: #de6262;
     --lightblue-color: #1691bd;
     --blue-color: #166ba2;
+    --lightgray-color: #f6f6f6;
     --gray-color: rgb(110, 110, 110);
     --blue-container-color: #19b2de;
-    --camera-container-color: #1596bd;
+    --translucent-blue-container: rgba(25, 178, 222, 0.9);
 
     /* font styling */
     --font-family: 'Ubuntu', sans-serif;
@@ -146,6 +147,11 @@ p {
 .about {
 
 }
+
+/* featured work, latest work, misc */
+.featured_work,
+.latest_work,
+.misc {
 .introduction{
     text-align: center;
     
@@ -179,8 +185,10 @@ section{
 .featured_work {
     text-align: center;
 }
-.featured_work > h2 {
-    font-weight: 400;
+.featured_work > h2,
+.latest_work > h2,
+.misc > h2 {
+    font-weight: normal;
     margin-bottom: 0.3125em;
 }
 .featured_work hr {
@@ -195,23 +203,27 @@ section{
     position: absolute;
     margin-top: -1px;
 }
-.featured_work__container {
+.featured_work__container,
+.latest_work__container {
     margin: 2.5em 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 18em;
     grid-gap: 1.5em;
 }
-.featured_work__item {
+.featured_work__item,
+.latest_work__item {
     position: relative;
     width: 100%;
 }
-.featured_work__item img {
+.featured_work__item img,
+.latest_work__item img {
     max-width:100%;
     height:100%;
     object-fit: cover;
 }
-.featured_work__overlay {
+.featured_work__overlay,
+.latest_work__overlay {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -220,10 +232,12 @@ section{
     flex-direction: column;
     justify-content: space-between;
 }
-.featured_work__overlay * {
+.featured_work__overlay *,
+.latest_work__overlay * {
     color: var(--white-color);
 }
-.featured_work__overlay p {
+.featured_work__overlay p,
+.latest_work__overlay p {
     font-size: 0.625em;
 }
 .featured_work__date {
@@ -232,7 +246,8 @@ section{
     width: fit-content;
     font-weight: 500;
 }
-.featured_work__details {
+.featured_work__details,
+.latest_work__details {
     background-color: var(--blue-container-color);
     padding: 0.5em 0.9375em;
     text-align: left;
@@ -240,14 +255,28 @@ section{
     justify-content: space-between;
     align-items: center;
 }
-.featured_work__details i {
+.featured_work__details i,
+.latest_work__details i {
     padding: 0.5em;
-    background-color: var(--camera-container-color);z
+    background-color: var(--lightblue-color);
 }
 
 /* latestWork */
 .latest_work {
-
+    margin-top: 2.5em;
+}
+.latest_work__overlay {
+    justify-content: flex-end;
+    background-color: var(--translucent-blue-container);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+}
+.latest_work__details {
+    background-color: transparent;
+}
+.latest_work__overlay:hover {
+    opacity: 1;
 }
 
 /* miscellaneous */
