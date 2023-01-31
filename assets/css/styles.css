@@ -319,7 +319,49 @@ button.item-1::after {
 
 /* footer */
 footer {
+    background-color: #19242e;
+    color: #fff;
+}
 
+.footer-img-icon{
+    border-radius: 6.25em;
+}
+
+.footer-header-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.875em 0em  1.875em 0em;
+    gap: 1.875em;
+}
+.footer-titles{
+    font-family: ubuntu,sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    color: #fff;
+}
+
+.column-footer{
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+}
+
+.footer-grid{
+    width: 100px;
+    height: 100px;
+   
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 1em;
+    width: fit-content;
+}
+
+.column-footer{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /* Small only */
