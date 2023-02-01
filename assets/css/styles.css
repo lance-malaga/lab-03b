@@ -28,6 +28,7 @@ CSS Structure:
     --lightblue-color: #1691bd;
     --blue-color: #166ba2;
     --purple-color: #852998;
+    --pink-color:#C85974;
     --lightgray-color: #f6f6f6;
     --gray-color: rgb(110, 110, 110);
     --blue-container-color: #19b2de;
@@ -440,22 +441,38 @@ footer {
     padding: 1.875em 0em  1.875em 0em;
     gap: 1.875em;
 }
-.footer-titles{
+.footer-titles {
     font-family: ubuntu,sans-serif;
     font-size: 1em;
     font-weight: 700;
     color: #fff;
+    margin-bottom: 10px;
 }
 
+.pixel-icons{
+    display: flex;
+    gap: 0.3125em;
+}
+
+.pixels{
+    width: 3.75em;
+    height: 3.75em;
+    margin-top: 1.875em;
+}
+
+.pixel-icons{
+    width: 3.75em;
+    height: 3.75em;
+    margin-bottom: 1.875em;
+}
 .column-footer{
     display: grid;
     grid-template-columns: repeat(4, 4fr);
 }
 
 .footer-grid{
-    width: 100px;
-    height: 100px;
-   
+    width: 6.25em;
+    height: 6.25em;
 }
 
 .gallery{
@@ -467,9 +484,113 @@ footer {
 
 .column-footer{
     display: flex;
-    justify-content: space-evenly;
+    width: 100%;
+    justify-content: space-around;
+    gap: 35px;
+    margin-top: 50px;
 }
 
+.icon-small{
+    width: 1.875em;
+    height: 1.875em;
+}
+
+.tweets{
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    gap: 16px; 
+}
+
+.line{
+    margin-bottom: 40px;
+}
+
+.white-text{
+   color: var(--white-color);
+}
+
+.hr-footer{
+    border: none;
+    border-top: 0.5px solid var(--gray-color);
+}
+.hr-footer::before{
+    content: "";
+    display: block;
+    width: 5%;
+    border: 1px solid var(--blue-container-color);
+    position: absolute;
+    margin-top: -1px;
+}
+
+.green{
+   background-color: var(--green-color);
+   height: 0.1875em;
+   border: var(--green-color);
+}
+
+.yellow{
+    background-color: var(--yellow-color);
+}
+
+.hr-yellow{
+    height: 0.1875em;
+    border: var(--yellow-color);
+}
+
+.red{
+    background-color: var(--red-color);
+}
+.hr-red{
+    height: 0.1875em;
+    border: var(--red-color);
+}
+.blue{
+    background-color:var(--blue-color)
+}
+
+.hr-blue{
+    height: 0.1875em;
+    border: var(--blue-container-color);
+}
+.pink{
+    background-color: var(--pink-color);
+}
+
+.light-blue{
+    background-color: var(--blue-container-color);
+}
+.input-container{
+    margin-top: 25px;
+    display: flex;
+
+}
+input{
+    background-color: var(--red-color);
+    border: none;
+    padding: 15px 20px;
+}
+
+#send-button{
+    padding: 20px;
+    background-color: var(--yellow-color);
+    border: none;
+    color: var(--white-color);
+}
+
+::placeholder{
+    color: var(--white-color);
+}
+
+.footer-colours{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.footer-colours > div{
+    padding: 15px 50px;
+}
 /* Small only */
 @media screen and (max-width: 39.9375em) {
 
