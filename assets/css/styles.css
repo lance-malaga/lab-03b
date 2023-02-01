@@ -119,10 +119,7 @@ p {
 
 /* carousel */
 .carousel {
-    /* background-color: orange;
-    height: 45em; */
-    /* margin: 0;
-    padding: 0; */
+    
 }
 
 .carousel-image > .carousel{
@@ -138,13 +135,26 @@ p {
 }
 .arrow-parent{
     position: absolute;
+    width: 55%;
 }
-
+.arrow{
+    font-weight: bold;
+    border: 5px solid white;
+    border-radius: 50%;
+    background: rgba(0,0,0,0);
+    color: white;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    
+}
 .carousel-left-arrow{
     position: absolute;
     left: 0;
 }
 .carousel-right-arrow{
+    position: absolute;
     right: 0;
 }
 /* about */
