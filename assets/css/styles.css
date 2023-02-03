@@ -478,7 +478,6 @@ footer {
 @media screen and (min-width: 90em) {
     .carousel{
         background-color: var(--gray-color);
-        padding: 0 auto !important;
     }
 }
 
