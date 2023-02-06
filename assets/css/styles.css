@@ -663,9 +663,8 @@ input{
     }
     .main-text-container{
         display: grid;
-        grid-template-columns: 15.625em 15.625em;
-        grid-column-gap: 6.25em;
-        grid-row-gap: 1.25em;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25em;
     }
     .intro-sentence{
         width: 35em;
@@ -728,5 +727,20 @@ input{
     }
     .recent-tweets{
         margin-top: 1em;
+    }
+    .main-text-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .web-solution-topics{
+        display: flex;
+        gap: 1em;
+        text-align: left;
+        
+    }
+    .topic-title{
+       margin-bottom: 0.5em; 
+    }
+    .topic-description{
+        padding: 0;
     }
 }
